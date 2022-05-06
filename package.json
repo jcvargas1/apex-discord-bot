@@ -1,0 +1,19 @@
+{
+  "name": "apex-bot",
+  "version": "1.0.0",
+  "description": "Discord bot to work with various apex legend features",
+  "main": "./src/bot.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./src/bot.js"
+  },
+  "author": "Juan Vargas",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^13.6.0",
+    "dotenv": "^16.0.0",
+    "mongodb": "^4.5.0",
+    "node-fetch": "^3.2.3"
+  }
+}
