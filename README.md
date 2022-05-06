@@ -4,6 +4,9 @@ A private bot created for the social instant messaging platform *Discord* that u
 # Why?
 *Apex Legends* is a popular first person shooter video game made by *Respawn Entertainment*. At the moment they have no way of being able to show data about your previous matches or a centralized location that allows you to view specific data rapidly. I created a bot that utilizes a reverse engineered API that allows users to track their gaming sessions which are uploaded to a Cloud Mongo database and to Discord and from there allow the user to see various stats about their account via bot commands in which the data is retrieved either from the API call or from the Mongo database. By creating this bot and having it in a Discord server it allows for a more engaging and informational time for all users involved. The bot is hosted on a Google Cloud Compute Engine instance.
 
+# How it works
+Since this is a private bot due to API call limitations and personalized database entries, the way it works is when a user makes a bot command the program will first retrieve the unique discord ID of the user and check if they are in the verified list. If they are on the list then the respective user object containing the right game account, API call, & MongoDB collection info will be given to the program and used depending on the command requested. The message will be parsed and see if any of the commands match the users request. 
+
 # Features
 <ul>
   <li> Create sessions to track your gameplay which upload to Discord and MongoDB in real time. Auto-time out also implemented.
